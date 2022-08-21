@@ -15,10 +15,14 @@ public class TestData {
 
     //                  filling in my data
     public static String gender = "Female";
-    public static String birthDate = "05 June,1994";
+    public static String birthDay = "05 June,1994";
+    public static String day = "05";
+    public static String month = "June";
+    public static String year = "1994";
     public static String subjects = "Physics";
     public static String hobbies = "Sports";
     public static String pathFile = "src/test/resources/JSON_Momoa.jpg";
+    public static String fileName = "JSON_Momoa.jpg";
     public static String state = "Haryana";
     public static String city = "Karnal";
 
@@ -31,10 +35,15 @@ public class TestData {
     public static String getPhoneNumber() {return phoneNumber;}
     public static String getCurrentAddress() {return currentAddress;}
     public static String getGender() {return gender;}
-    public static String getBirthDate() {return birthDate;}
+    public static String getBirthDay() {return birthDay;}
+    public static String getDay() {return day;}
+    public static String getMonth() {return month;}
+    public static String getYear() {return year;}
     public static String getSubjects() {return subjects;}
     public static String getHobbies() {return hobbies;}
     public static String getPathFile() {return pathFile;}
+    public static String getFileName() {return fileName;}
     public static String getState() {return state;}
     public static String getCity() {return city;}
+    public static String getStateAndCity() {return String.format("%s %s", getState(), getCity());}
 }

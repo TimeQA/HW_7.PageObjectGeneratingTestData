@@ -17,29 +17,29 @@ public class TestPracticeFormPageObjectWithFakerData extends TestBase{
                 .setFirstName(getFirstName())
                 .setLastName(getLastName())
                 .setEmail(getEmail())
-                .setGenter("Female")
+                .setGenter(getGender())
                 .setNumber(getPhoneNumber())
-                .setBirthDate("5", "June", "1994")
-                .setSubjects("Physics")
-                .setHobbies("Sports")
-                .setPathFile("src/test/resources/JSON_Momoa.jpg")
+                .setBirthDate(getDay(), getMonth(), getYear())
+                .setSubjects(getSubjects())
+                .setHobbies(getHobbies())
+                .setPathFile(getPathFile())
                 .setAddress(getCurrentAddress())
-                .setState("Haryana")
-                .setCity("Karnal");
+                .setState(getState())
+                .setCity(getCity());
         $("#submit").pressEnter();
 
         String expectedFullName = format("%s %s",getFirstName() ,getLastName());
         testPracticeFormPage.checkResultVisible();
         testPracticeFormPage.checkResult("Student Name", expectedFullName)
                 .checkResult("Student Email",getEmail())
-                .checkResult("Gender", "Female")
+                .checkResult("Gender", getGender())
                 .checkResult("Mobile",getPhoneNumber())
-                .checkResult("Date of Birth", "05 June,1994")
-                .checkResult("Subjects", "Physics")
-                .checkResult("Hobbies", "Sports")
-                .checkResult("Picture", "JSON_Momoa.jpg")
+                .checkResult("Date of Birth", getBirthDay())
+                .checkResult("Subjects", getSubjects())
+                .checkResult("Hobbies", getHobbies())
+                .checkResult("Picture", getFileName())
                 .checkResult("Address",getCurrentAddress())
-                .checkResult("State and City", "Haryana Karnal");
+                .checkResult("State and City", getStateAndCity());
 
     }
 
