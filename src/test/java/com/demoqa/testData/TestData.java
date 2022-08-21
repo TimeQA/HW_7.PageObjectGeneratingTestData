@@ -38,10 +38,3 @@ public class TestData {
     public static String getState() {return state;}
     public static String getCity() {return city;}
 }
-
-//    static String firstName = "Ivan",
-//        lastName = "Navi",
-//        email = "Ivan@navi.com",
-//        number = "8999000881",
-//        currentAddress = "currentAddress";
-

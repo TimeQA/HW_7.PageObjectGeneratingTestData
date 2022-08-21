@@ -11,25 +11,6 @@ import static java.lang.String.format;
 public class TestPracticeFormPageObjectWithFakerData extends TestBase{
     TestPracticeFormPage testPracticeFormPage = new TestPracticeFormPage();
 
-//    Faker faker = new Faker();
-//
-//    String firstName,
-//            lastName,
-//            email,
-//            phoneNumber,
-//            currentAddress,
-//            dateOfBirth;
-//
-//    @BeforeEach
-//    void prepareTestData() {
-//        firstName = faker.name().firstName();
-//        lastName = faker.name().lastName();
-//        email = faker.internet().emailAddress();
-//        phoneNumber = faker.phoneNumber().subscriberNumber(10);
-//        currentAddress = faker.elderScrolls().quote();
-//
-//    }
-
     @Test
     void practiceFormTest() {
         testPracticeFormPage.openPage()
@@ -81,7 +62,3 @@ public class TestPracticeFormPageObjectWithFakerData extends TestBase{
                 text("8999000881"));
     }
 }
-
-
-//        $(".table-responsive table").$(byText("Date of Birth"))
-//                .parent().shouldHave((text("05 June,1994")));
